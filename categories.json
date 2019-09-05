@@ -1,0 +1,15 @@
+{
+    "Tickets":{
+        "Open": 43,
+        "Awaiting Reply":2,
+        "Resolved":12,
+        "Archived":60, 
+        "Total":43
+    },
+    "Priority":{
+        "Urgent":43,
+        "High":2,
+        "Medium":43,
+        "Low":2
+    }
+} 

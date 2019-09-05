@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+        rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <nav class="navbar d-flex p-0 align-items-start">
+        <div class="navbar-left d-flex">
+            <img class="nav-icon" width="19.94" height="17.76" src="./assets/nav-icon.png" />
+            <img class="nav-logo" width="200.85" height="28.22" src="./assets/nav-logo.png" />
+            <div class="nav-search align-items-start d-lg-flex d-none">
+                <img src="./assets/nav-search.png" width="17.91" height="17.91" />
+                <input class="nav-search-input" type="text" placeholder="Search here" />
+            </div>
+        </div>
+        <div class="navbar-right d-flex">
+            <div class="nav-user-info flex-column d-lg-flex d-none">
+                <div class="nav-user-name">Corey Cross</div>
+                <div class="nav-user-title">Administrator</div>
+            </div>
+            <div class="nav-user-status">
+                <span class="nav-user-short">CC</span>
+                <img class="nav-user-status-icon" width="10" height="10" src="./assets/nav-oval-status.png" />
+            </div>
+        </div>
+    </nav>
+
+    <div class="row" style="position:relative;">
+        <div class="col-lg-2 col-md-4 p-0 d-none d-lg-block left-side-menu" style="max-width:258px">
+            <div class="create-ticket-button">
+                Create Ticket
+                <img width="17.1" height="17.11" src="./assets/create-ticket-icon.png">
+            </div>
+            <div class="menu-container">
+                <div class="category-title">Tickets<span class="tickets-total">43</span></div>
+                <div class="open category active">
+                    <div class="circle"></div>Open<span class="count">43</span>
+                </div>
+                <div class="awaiting-reply category">
+                    <div class="circle"></div>Awaiting Reply<span class="count">2</span>
+                </div>
+                <div class="resolved category">
+                    <div class="circle"></div>Resolved<span class="count">12</span>
+                </div>
+                <div class="archived category active">
+                    <div class="circle"></div>Archived<span class="count">60</span>
+                </div>
+            </div>
+            <div class="menu-container">
+                <div class="category-title">Priority</div>
+                <div class="urgent category active">
+                    <div class="circle"></div>Urgent<span class="count">43</span>
+                </div>
+                <div class="high category">
+                    <div class="circle"></div>High<span class="count">2</span>
+                </div>
+                <div class="medium category active">
+                    <div class="circle"></div>Medium<span class="count">43</span>
+                </div>
+                <div class="low category">
+                    <div class="circle"></div>Low<span class="count">2</span>
+                </div>
+            </div>
+            <div class="menu-container">
+                <div class="category-title">Tags</div>
+                <input class="tags-input" placeholder="Search for tag" type="text">
+                <div class="tags-container">
+                    <div class="tag d-inline-flex align-items-center">Trash<div class="tag-remove"><i class="fa fa-times" aria-hidden="true"></i></div></div>
+                    <div class="tag d-inline-flex align-items-center">Jackets<div class="tag-remove"><i class="fa fa-times" aria-hidden="true"></i></div></div>
+                    <div class="tag d-inline-flex align-items-center">Jackets<div class="tag-remove"><i class="fa fa-times" aria-hidden="true"></i></div></div>
+                    <div class="tag d-inline-flex align-items-center">Jumpers<div class="tag-remove"><i class="fa fa-times" aria-hidden="true"></i></div></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-7 p-0 tickets col-md-12 col-sm-12">
+            <div class="custom-control custom-checkbox select-all-checkbox d-lg-block d-none">
+                <input type="checkbox" class="custom-control-input" id="select-all">
+                <label class="custom-control-label" for="select-all">Select All</label>
+            </div>
+            <div class="ticket-date">11th July 2019</div>
+            <div class="ticket-container">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="ticket-1">
+                    <label class="custom-control-label" for="ticket-1"></label>
+                </div>
+                <div class="ticket">
+                    <div class="ticket-line"></div>
+                    <div class="ticket-icon">
+                        <span class="fa fa-envelope fa-white"></span>
+                    </div>
+                    <div class="ticket-user">
+                        <div class="ticket-user-name">Matthew Dunne</div>
+                        <div class="ticket-user-category">Migration to Shopify <span>(#4345)</span></div>
+                    </div>
+                    <div class="ticket-desc d-lg-flex d-none">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                    </div>
+                    <div class="ticket-priority d-lg-flex d-none">
+                        Medium
+                    </div>
+                    <div class="ticket-time d-lg-flex d-none">
+                        12 hours ago
+                    </div>
+                    <div class="ticket-user-icon d-lg-block d-none">
+                        CC
+                    </div>
+                </div>
+            </div>
+            <div class="ticket-container">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="ticket-2">
+                    <label class="custom-control-label" for="ticket-2"></label>
+                </div>
+                <div class="ticket">
+                    <div class="ticket-line"></div>
+                    <div class="ticket-icon">
+                        <span class="fa fa-envelope fa-white"></span>
+                    </div>
+                    <div class="ticket-user">
+                        <div class="ticket-user-name">Matthew Dunne</div>
+                        <div class="ticket-user-category">Migration to Shopify <span>(#4345)</span></div>
+                    </div>
+                    <div class="ticket-desc d-lg-flex d-none">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                    </div>
+                    <div class="ticket-priority d-lg-flex d-none">
+                        Medium
+                    </div>
+                    <div class="ticket-time d-lg-flex d-none">
+                        12 hours ago
+                    </div>
+                    <div class="ticket-user-icon d-lg-block d-none">
+                        CC
+                    </div>
+                </div>
+            </div>
+            <div class="ticket-container">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="ticket-3">
+                    <label class="custom-control-label" for="ticket-3"></label>
+                </div>
+                <div class="ticket">
+                    <div class="ticket-line"></div>
+                    <div class="ticket-icon">
+                        <span class="fa fa-envelope fa-white"></span>
+                    </div>
+                    <div class="ticket-user">
+                        <div class="ticket-user-name">Matthew Dunne</div>
+                        <div class="ticket-user-category">Migration to Shopify <span>(#4345)</span></div>
+                    </div>
+                    <div class="ticket-desc d-lg-flex d-none">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                    </div>
+                    <div class="ticket-priority d-lg-flex d-none">
+                        Medium
+                    </div>
+                    <div class="ticket-time d-lg-flex d-none">
+                        12 hours ago
+                    </div>
+                    <div class="ticket-user-icon d-lg-block d-none">
+                        CC
+                    </div>
+                </div>
+            </div>
+            <div class="ticket-container">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="ticket-4">
+                    <label class="custom-control-label" for="ticket-4"></label>
+                </div>
+                <div class="ticket">
+                    <div class="ticket-line"></div>
+                    <div class="ticket-icon">
+                        <span class="fa fa-envelope fa-white"></span>
+                    </div>
+                    <div class="ticket-user">
+                        <div class="ticket-user-name">Matthew Dunne</div>
+                        <div class="ticket-user-category">Migration to Shopify <span>(#4345)</span></div>
+                    </div>
+                    <div class="ticket-desc d-lg-flex d-none">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                    </div>
+                    <div class="ticket-priority d-lg-flex d-none">
+                        Medium
+                    </div>
+                    <div class="ticket-time d-lg-flex d-none">
+                        12 hours ago
+                    </div>
+                    <div class="ticket-user-icon d-lg-block d-none">
+                        CC
+                    </div>
+                </div>
+            </div>
+            <div class="ticket-date">12th July 2019</div>
+            <div class="ticket-container">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="ticket-5">
+                    <label class="custom-control-label" for="ticket-5"></label>
+                </div>
+                <div class="ticket">
+                    <div class="ticket-line"></div>
+                    <div class="ticket-icon">
+                        <span class="fa fa-envelope fa-white"></span>
+                    </div>
+                    <div class="ticket-user">
+                        <div class="ticket-user-name">Matthew Dunne</div>
+                        <div class="ticket-user-category">Migration to Shopify <span>(#4345)</span></div>
+                    </div>
+                    <div class="ticket-desc d-lg-flex d-none">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                    </div>
+                    <div class="ticket-priority d-lg-flex d-none">
+                        Medium
+                    </div>
+                    <div class="ticket-time d-lg-flex d-none">
+                        12 hours ago
+                    </div>
+                    <div class="ticket-user-icon d-lg-block d-none">
+                        CC
+                    </div>
+                </div>
+            </div>
+            <div class="ticket-container">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="ticket-6">
+                    <label class="custom-control-label" for="ticket-6"></label>
+                </div>
+                <div class="ticket">
+                    <div class="ticket-line"></div>
+                    <div class="ticket-icon">
+                        <span class="fa fa-envelope fa-white"></span>
+                    </div>
+                    <div class="ticket-user">
+                        <div class="ticket-user-name">Matthew Dunne</div>
+                        <div class="ticket-user-category">Migration to Shopify <span>(#4345)</span></div>
+                    </div>
+                    <div class="ticket-desc d-lg-flex d-none">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                    </div>
+                    <div class="ticket-priority d-lg-flex d-none">
+                        Medium
+                    </div>
+                    <div class="ticket-time d-lg-flex d-none">
+                        12 hours ago
+                    </div>
+                    <div class="ticket-user-icon d-lg-block d-none">
+                        CC
+                    </div>
+                </div>
+            </div>
+            <div class="ticket-container">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="ticket-7">
+                    <label class="custom-control-label" for="ticket-7"></label>
+                </div>
+                <div class="ticket">
+                    <div class="ticket-line"></div>
+                    <div class="ticket-icon">
+                        <span class="fa fa-envelope fa-white"></span>
+                    </div>
+                    <div class="ticket-user">
+                        <div class="ticket-user-name">Matthew Dunne</div>
+                        <div class="ticket-user-category">Migration to Shopify <span>(#4345)</span></div>
+                    </div>
+                    <div class="ticket-desc d-lg-flex d-none">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                    </div>
+                    <div class="ticket-priority d-lg-flex d-none">
+                        Medium
+                    </div>
+                    <div class="ticket-time d-lg-flex d-none">
+                        12 hours ago
+                    </div>
+                    <div class="ticket-user-icon d-lg-block d-none">
+                        CC
+                    </div>
+                </div>
+            </div>
+            <div class="ticket-container">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="ticket-8">
+                    <label class="custom-control-label" for="ticket-8"></label>
+                </div>
+                <div class="ticket">
+                    <div class="ticket-line"></div>
+                    <div class="ticket-icon">
+                        <span class="fa fa-envelope fa-white"></span>
+                    </div>
+                    <div class="ticket-user">
+                        <div class="ticket-user-name">Matthew Dunne</div>
+                        <div class="ticket-user-category">Migration to Shopify <span>(#4345)</span></div>
+                    </div>
+                    <div class="ticket-desc d-lg-flex d-none">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                    </div>
+                    <div class="ticket-priority d-lg-flex d-none">
+                        Medium
+                    </div>
+                    <div class="ticket-time d-lg-flex d-none">
+                        12 hours ago
+                    </div>
+                    <div class="ticket-user-icon d-lg-block d-none">
+                        CC
+                    </div>
+                </div>
+            </div>
+            <div class="ticket-container">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="ticket-9">
+                    <label class="custom-control-label" for="ticket-9"></label>
+                </div>
+                <div class="ticket">
+                    <div class="ticket-line"></div>
+                    <div class="ticket-icon">
+                        <span class="fa fa-envelope fa-white"></span>
+                    </div>
+                    <div class="ticket-user">
+                        <div class="ticket-user-name">Matthew Dunne</div>
+                        <div class="ticket-user-category">Migration to Shopify <span>(#4345)</span></div>
+                    </div>
+                    <div class="ticket-desc d-lg-flex d-none">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                    </div>
+                    <div class="ticket-priority d-lg-flex d-none">
+                        Medium
+                    </div>
+                    <div class="ticket-time d-lg-flex d-none">
+                        12 hours ago
+                    </div>
+                    <div class="ticket-user-icon d-lg-block d-none">
+                        CC
+                    </div>
+                </div>
+            </div>
+            <div class="ticket-container">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="ticket-10">
+                    <label class="custom-control-label" for="ticket-10"></label>
+                </div>
+                <div class="ticket">
+                    <div class="ticket-line"></div>
+                    <div class="ticket-icon">
+                        <span class="fa fa-envelope fa-white"></span>
+                    </div>
+                    <div class="ticket-user">
+                        <div class="ticket-user-name">Matthew Dunne</div>
+                        <div class="ticket-user-category">Migration to Shopify <span>(#4345)</span></div>
+                    </div>
+                    <div class="ticket-desc d-lg-flex d-none">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                    </div>
+                    <div class="ticket-priority d-lg-flex d-none">
+                        Medium
+                    </div>
+                    <div class="ticket-time d-lg-flex d-none">
+                        12 hours ago
+                    </div>
+                    <div class="ticket-user-icon d-lg-block d-none">
+                        CC
+                    </div>
+                </div>
+            </div>
+            <div class="ticket-container">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="ticket-11">
+                    <label class="custom-control-label" for="ticket-11"></label>
+                </div>
+                <div class="ticket">
+                    <div class="ticket-line"></div>
+                    <div class="ticket-icon">
+                        <span class="fa fa-envelope fa-white"></span>
+                    </div>
+                    <div class="ticket-user">
+                        <div class="ticket-user-name">Matthew Dunne</div>
+                        <div class="ticket-user-category">Migration to Shopify <span>(#4345)</span></div>
+                    </div>
+                    <div class="ticket-desc d-lg-flex d-none">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                    </div>
+                    <div class="ticket-priority d-lg-flex d-none">
+                        Medium
+                    </div>
+                    <div class="ticket-time d-lg-flex d-none">
+                        12 hours ago
+                    </div>
+                    <div class="ticket-user-icon d-lg-block d-none">
+                        CC
+                    </div>
+                </div>
+            </div>
+            <div class="ticket-container">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="ticket-12">
+                    <label class="custom-control-label" for="ticket-12"></label>
+                </div>
+                <div class="ticket">
+                    <div class="ticket-line"></div>
+                    <div class="ticket-icon">
+                        <span class="fa fa-envelope fa-white"></span>
+                    </div>
+                    <div class="ticket-user">
+                        <div class="ticket-user-name">Matthew Dunne</div>
+                        <div class="ticket-user-category">Migration to Shopify <span>(#4345)</span></div>
+                    </div>
+                    <div class="ticket-desc d-lg-flex d-none">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                    </div>
+                    <div class="ticket-priority d-lg-flex d-none">
+                        Medium
+                    </div>
+                    <div class="ticket-time d-lg-flex d-none">
+                        12 hours ago
+                    </div>
+                    <div class="ticket-user-icon d-lg-block d-none">
+                        CC
+                    </div>
+                </div>
+            </div>
+            <div class="ticket-container">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="ticket-13">
+                    <label class="custom-control-label" for="ticket-13"></label>
+                </div>
+                <div class="ticket">
+                    <div class="ticket-line"></div>
+                    <div class="ticket-icon">
+                        <span class="fa fa-envelope fa-white"></span>
+                    </div>
+                    <div class="ticket-user">
+                        <div class="ticket-user-name">Matthew Dunne</div>
+                        <div class="ticket-user-category">Migration to Shopify <span>(#4345)</span></div>
+                    </div>
+                    <div class="ticket-desc d-lg-flex d-none">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                    </div>
+                    <div class="ticket-priority d-lg-flex d-none">
+                        Medium
+                    </div>
+                    <div class="ticket-time d-lg-flex d-none">
+                        12 hours ago
+                    </div>
+                    <div class="ticket-user-icon d-lg-block d-none">
+                        CC
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 p-0 d-none d-lg-flex empty-container">
+            <img src="./assets/empty-ticket.png" width="355" height="311.69">
+        </div>
+        <div class="body-overlay"></div>
+    </div>
+    
+    <div class="mobile-fixed-button d-none">Filter</div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
