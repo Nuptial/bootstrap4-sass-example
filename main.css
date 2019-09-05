@@ -10086,6 +10086,11 @@ body {
     display: block !important;
   }
 }
+.mobile-fixed-button.active {
+  background: white;
+  right: 162px;
+  z-index: 9999;
+}
 
 .body-overlay {
   display: none;
