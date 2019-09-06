@@ -115,6 +115,9 @@ body
   border-top-right-radius: 25px
   border-bottom-right-radius: 25px
   cursor: pointer
+  @media only screen and (max-width: 1121px)
+    width: 160px
+
 
 .create-ticket-button img
   margin-left: 26.4px
@@ -123,6 +126,8 @@ body
   margin-left:22px
   margin-top:40px
   max-width:205px
+  @media only screen and (max-width: 1410px)
+    padding: 10px
   &:first-of-type
     margin-top:24px
 
@@ -131,6 +136,12 @@ body
   line-height: 21px
   &:nth-child(2n)
     margin-left: 15.3px
+  @media only screen and (max-width: 1683px)
+    font-size: 0.6rem 
+  @media only screen and (max-width: 1410px)
+    font-size: 0.5rem
+    &:nth-child(2n)
+      margin-left: 0px
 
 .tag-remove
   background: #E1E1E1
@@ -146,6 +157,10 @@ body
 
 .category-title
   font-size:18px
+  @media only screen and (max-width: 1683px)
+    font-size: 1rem 
+  @media only screen and (max-width: 1410px)
+    font-size: 0.7rem
   font-weight: bold
   line-height:27px
   display: flex
@@ -155,6 +170,10 @@ body
   display: flex
   align-items: center
   font-size:14px
+  @media only screen and (max-width: 1683px)
+    font-size: 0.9rem 
+  @media only screen and (max-width: 1410px)
+    font-size: 0.6rem
   font-weight: 400
   cursor: pointer
   margin-bottom:11px
@@ -245,6 +264,11 @@ body
   padding:8px 0px 8px 13px
   border: 1px solid #D8D8D8
   border-radius:10px
+  @media only screen and (max-width: 1410px)
+    width: 150px
+    font-size: 0.5rem
+  @media only screen and (max-width: 1121px)
+    width: 125px
   &:placeholder
     color: #D9D9D9
 
@@ -252,11 +276,16 @@ body
   outline-width: 0
 /* Menu Ends */   
 
+.select-all-label
+  @media only screen and (max-width: 1410px)
+    font-size: 0.7rem
+
 .tickets
   background: rgba(225, 225, 225, .3)
   overflow: scroll
   max-height: 1018px
   direction : rtl
+  max-width: 1085px
 
 .tickets::-webkit-scrollbar
   width: 6px
@@ -286,6 +315,8 @@ body
   position: relative
   margin-top: 13px
   direction: ltr
+  @media only screen and (max-width: 1410px)
+    margin: 10px
   &:first-of-type
     margin-top: 0px
   &:last-of-type
@@ -332,9 +363,21 @@ body
     font-size: 16px
     font-weight: bold
     line-height: 25px
+    @media only screen and (max-width: 1683px)
+      font-size: 1rem 
+    @media only screen and (max-width: 1410px)
+      font-size: 0.7rem
+    @media only screen and (max-width: 1050px)
+      font-size: 0.5rem
+    @media only screen and (max-width: 990px)
+      font-size: 1rem
   .ticket-user-category
     font-size: 14px
     font-weight: 400
+    @media only screen and (max-width: 1683px)
+      font-size: 0.6rem 
+    @media only screen and (max-width: 1410px)
+    font-size: 0.5rem
     span
       color: #25BBF3
       font-size: 10px
@@ -345,18 +388,31 @@ body
   font-weight: 400
   line-height: 21px
   margin-right: 29.7px
+  @media only screen and (max-width: 1683px)
+    font-size: 0.6rem 
+  @media only screen and (max-width: 1410px)
+    font-size: 0.5rem
 
 .ticket-priority
   font-size:14px
   font-weight: 500
   color: #2ECC71
   margin-right: 41px
+  @media only screen and (max-width: 1683px)
+    font-size: 0.6rem
+  @media only screen and (max-width: 1410px)
+    font-size: 0.5rem
+    text-align: center
 
 .ticket-time
   font-size:14px
   color: #202020
   font-weight: 500
   margin-right:28px
+  @media only screen and (max-width: 1683px)
+    font-size: 0.6rem
+  @media only screen and (max-width: 1410px)
+    font-size: 0.5rem
 
 .ticket-user-icon
   background: #FFCB78
@@ -369,11 +425,22 @@ body
   border-radius: 25px
   margin-right: 17.5px
   font-size: 12px
+  @media only screen and (max-width: 1683px)
+    font-size:0.6rem
+  @media only screen and (max-width: 1410px)
+    font-size: 0.5rem
 
 .empty-container
   justify-content: center
   align-items: center
   cursor: pointer
+  max-width: 577px
+  img
+    width: 100%
+    max-width: 355px
+    height: auto
+    @media only screen and (max-width: 1410px)
+      width: 70%
 
 .mobile-fixed-button
   position: fixed
@@ -408,6 +475,14 @@ body
    
 .left-side-menu
   display: none
+  max-width: 258px
+  @media only screen and (max-width: 1683px)
+    font-size: 0.6rem 
+  @media only screen and (max-width: 1410px)
+    font-size: 0.5rem
+    max-width: 200px
+  @media only screen and (max-width: 1121px)
+    max-width: 170px
   &.active
     @media only screen and (max-width: 760px)
       display: block !important
